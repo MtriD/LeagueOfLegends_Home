@@ -1,3 +1,34 @@
 body {
+	margin: 0;
+	padding: 0;
+	background-image: url(imagens/Background.png);
+	background-repeat: repeat;
+	background-attachment: fixed;
+	font-family: Playfair Display SC;
+	font-size: 23px;
+}
+
+.header{
+	height: 260px;
+	width: 100%;
+	position: absolute;
+	background: url(imagens/textura-superior.png) no-repeat;
+}
+
+#logo-home{
+	position: absolute;
+	left: 37%;
+	top: 20%; 
+}
+
+#menu{
+	position: relative;
+	color: #B78A29;
+	text-decoration: none;
+	font-family: Playfair Display SC;
+	font-size: 23px;
+}
+
+#busca{
 
 }

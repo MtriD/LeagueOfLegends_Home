@@ -77,8 +77,8 @@ body {
 
 .imagem-busca{
 	position: absolute;
-    margin-left: 1150px;
-    margin-top: -142px;
+    margin-left: 1170px;
+    margin-top: 62px;
 }
 
 #caixa-texto{
@@ -90,8 +90,69 @@ body {
 	height: 300px;
 }
 
-.social-media{
-	list-style: none;
-	display: inline-block;
-	padding: 8px; 8px;
+		/* Social Media Rodapé */
+
+#riot{
+	position: relative;
+	margin-left: 55px;
+}
+
+ 		ul.social-media{
+        	margin-bottom: 58px;
+        	margin-left: 5px;
+            text-align: left; 
+        }
+        ul.social-media li{
+            display: inline-block;
+            margin: 0 0px;
+        }
+        ul.social-media li a{
+            padding: 1px 1px;
+            color: #B78A29;
+        }
+        ul.social-media li a:hover{
+            background-color: transparent;
+        }
+
+.btlaranja{
+	position: absolute;
+	left: 47%;
+	top: 850px;
+	margin-top: 50px;
+}
+
+		ul.menu-simples-footer{
+            position: relative;
+            text-align: left;
+            font-size: 13px;
+            margin-top: 60px;
+			margin-left: 280px; 
+            top: 55px;
+        }
+        ul.menu-simples-footer li{
+            display: inline-block;
+            margin-left: 30px;
+            margin: 0 0px;
+        }
+        ul.menu-simples-footer li a{
+            padding: 8px 8px;
+            color: #ffffff;
+        }
+        ul.menu-simples-footer li a:hover{
+            background-color: transparent;
+        }
+
+.texto-copy-right{
+			height:50px;
+			width:640px;
+			position: relative;
+            text-align: center;
+            font-size: 13px;
+			margin-left: 330px; 
+            top: 65px;
+            color: #ffffff;
+}
+
+.pvp-net{
+	float: left;
 }

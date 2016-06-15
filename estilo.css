@@ -66,9 +66,22 @@ body {
             background-color: #059CC8;
         }
 
+.button-procurar{
+			background-color: Transparent;
+            background-repeat:no-repeat;
+            border: none;
+            cursor:pointer;
+            overflow: hidden;
+}
+
 .imagem-busca{
 	position: absolute;
-    margin-right: -2430px;
+    margin-left: 1150px;
+    margin-top: -142px;
+}
+
+#caixa-texto{
+	display: none;
 }
 
 .slider{

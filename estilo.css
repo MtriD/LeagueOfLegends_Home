@@ -164,6 +164,24 @@ body {
 	top: 75px;
 	margin-top: 50px;
 }
+a.btlaranja:before.{
+    content: '';
+    display: block;
+    width: 59px;
+    height: 80px;
+    background: #000000 url(imagens/botao-jogue-agora part-esq.png) 0 0 no-repeat;
+    margin: 0 0 0 0;
+}
+
+button.btlaranja:middle{
+    content: '';
+    background-image: url(imagens/botao-jogue-agora-part-central.png);
+}
+
+button.btlaranja:after{
+    content: '';
+    background-image: url(imagens/botao-jogue-agora-part-dir.png);
+}
 
 		ul.menu-simples-footer{
             position: relative;

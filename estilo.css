@@ -33,93 +33,97 @@ body {
     margin: 0 auto;
     padding: auto;
         }
-        
-        /*menu topo esquerda */
-
-        .menu-esquerda li{
-            position: relative;
-            float: left;
-        }
-
-        .menu-esquerda li a{
-            text-decoration: none;
-            padding: 0 8px 0 8px;
-            display: block;
-        }
-
-        .menu-esquerda li a:hover{
-            text-shadow: 0px 0px 5px;
-        }
-
-        .menu-esquerda li ul{
-            position: absolute;
-            top: 25px;
-            left: 0;
-            display: none;
-        }
-
-        .menu-esquerda li:hover ul, .menu-esquerda li.over ul{ display: block;}
-
-        .menu-esquerda li ul li{
-            border: 1px solid #c0c0c0;
-            display: block;
-            width: 150px;
-        }
      	
      	/*menu topo esquerda */
 
-        /*ul.menu-esquerda{
+        ul.menu-esquerda{
             text-align: left; 
         }
         ul.menu-esquerda li{
+            position: relative;
+            float: left;
             display: inline-block;
-            margin-left: 10px;
             margin: 0 0px;
         }
         ul.menu-esquerda li a{
             padding: 8px 8px;
             color: #B78A29;
+            text-decoration: none;
+            padding: 0 8px 0 8px;
+            display: inline-block;
+            
         }
-        ul.menu-esquerda li a:hover{
+
+        ul.menu-esquerda li ul li a{
+            position: absolute;
+            float: left;
+            top: 25px;
+            left: 0;
+            display: none;
+        }
+
+        ul.menu-esquerda li a:hover, .submenu-esquerda li.over{
             background-color: #059CC8;
-        }*/
+            display: block;
+        }
 
         /*Menu topo direita*/
 
         ul.menu-direita{
-        	margin-top: -90px;
-        	margin-right: -515px;
+            margin-left: 750px;
             text-align: right; 
         }
         ul.menu-direita li{
+            position: relative;
+            float: right;
             display: inline-block;
             margin: 0 0px;
         }
         ul.menu-direita li a{
             padding: 8px 8px;
             color: #B78A29;
+            text-decoration: none;
+            padding: 0 8px 0 8px;
+            display: inline-block;
+            
         }
-        ul.menu-direita li a:hover{
+
+        ul.menu-direita li ul li a{
+            position: absolute;
+            float: right;
+            top: 25px;
+            left: 0;
+            display: none;
+        }
+
+        ul.menu-direita li a:hover, .submenu-direita li.over{
             background-color: #059CC8;
+            display: block;
         }
 
-.button-procurar{
+/* Botao Busca */
 
-		background-color: Transparent;
-        background-repeat:no-repeat;
-        border: none;
-        cursor:pointer;
-        overflow: hidden;
+.divBusca{
+    margin-top: 30px;
+    margin-left: 1150px;
+    background-color: transparent;
+    width:50px;
+}
+ 
+.MostrarBusca{
+    display: none;
+    float: center;
+    background-color: transparent;
+    padding-right:5px;
+    font-style: italic;
+    font-size: 16px;
+    border:none;
+    height: 40px;
+    width: 180px;
 }
 
-.imagem-busca{
-	position: absolute;
-    margin-left: 1170px;
-    margin-top: 25px;
-}
-
-#caixa-texto{
-	display: none;
+.btnBusca:hover{
+    display: inline-block;
 }
 
 /* Conteúdo */
@@ -138,8 +142,8 @@ body {
 	position: fixed;
 	margin-left: 0px;
 	padding-left: 0px;
-	width: 450px;
-	height: 170px;
+	width: 480px;
+	height: 210px;
 	background-color: rgba(0,0,0,0.55);
 }
 
@@ -153,7 +157,34 @@ body {
 }
 
 .btcinza-1{
-	margin-left: 50px;
+    font: bold 20px "Playfair Display SC";
+	text-align: left;
+    margin-left: 50px;
+    margin-top: 10px;
+    background-image: url(imagens/bg-botao-cinza-meio.png);
+    background-repeat: repeat-x;
+    background-position: center;
+    line-height: 55px;
+    display: inline-block;
+}
+
+a.btcinza-1:before, a.btcinza-1:after {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 56px;
+    vertical-align: middle;
+
+}
+a.btcinza-1:before{
+
+    background: url(imagens/bg-botao-cinza-esquerdo.png) top left no-repeat;
+
+}
+a.btcinza-1:after{
+
+    background: url(imagens/bg-botao-cinza-direita.png) top right no-repeat;
+
 }
 
 #imagem1{

@@ -14,6 +14,8 @@
 				<img src="imagens/logo-LOL.png"/>
 			</a>	
 
+			<!-- Menu Esquerda -->
+
 			<div class="menu-topo">
 				<ul class="menu-esquerda">
 					<li><a title="Como Jogar" href="#">COMO JOGAR</a>
@@ -34,7 +36,7 @@
 
 					<li><a title="Notícias" href="#">NOTÍCIAS</a></li>
 					<li><a title="E-Sport" href="#">E-SPORT</a>
-						<ul>
+						<ul class="submenu-esquerda">
 							<li><a href="#">CBLOL</a></li>
 							<li><a href="#">Times</a></li>
 							<li><a href="#">Notícias</a></li>
@@ -45,7 +47,7 @@
 					</li>
 
 					<li><a title="Suporte" href="#">SUPORTE</a>
-						<ul>
+						<ul class="submenu-esquerda">
 							<li><a href="#">Download</a></li>
 							<li><a href="#">Sistema</a></li>
 							<li><a href="#">FAQ</a></li>
@@ -53,9 +55,11 @@
 					</li>
 				</ul>
 
+				<!-- Menu Direita -->
+
 				<ul class="menu-direita">
 					<li><a title="Comunidade" href="#">COMUNIDADE</a>
-						<ul>
+						<ul class="submenu-direita">
 							<li><a href="#">Mídias Sociais</a></li>
 							<li><a href="#">Publicações</a></li>
 							<li><a href="#">Eventos</a></li>
@@ -64,7 +68,7 @@
 
 					<li><a title="Fórum" href="#">FÓRUM</a></li>
 					<li><a title="Perfil" href="#">PERFIL</a>
-						<ul>
+						<ul class="submenu-direita">
 							<li><a href="#">Configurações</a></li>
 							<li><a href="#">Árvore de Itens</a></li>
 							<li><a href="#">Histórico de Partidas</a></li>
@@ -73,12 +77,16 @@
 					</li>
 				</ul>
 			</div>
+			
+		<!-- Botão Busca -->
 
-			<form class="imagem-busca">
-				<button class="button-procurar"><img src="imagens/Procurar.png"></button>
-					<input id="caixa-texto" type="text">
-			</form>
-		
+			<div class="divBusca">
+    			<img src="imagens/Procurar.png" class="btnBusca" alt="Buscar"/>
+    				<div class="MostrarBusca">
+    					<input type="text" class="txtBusca" placeholder="Buscar..."/>
+    				</div>
+			</div>
+
 		</div>
 
 		<!-- Banner -->
@@ -95,7 +103,9 @@
 						<li class="square">
 							<h1>Em frente; a Shurima!</h1>
 							<h3>É o início de uma nova era e o futuro de Shurima está por um fio...</h3>
-							<button type="button" class="btcinza-1">Comece  a  Jornada</button>
+							<div class="btcinza">
+							<a href="#" class="btcinza-1">Comece a Jornada</a>
+							</div>	
 						</li>
 					<!--	<li>
 							<h1>Taliyah, a Tecelã de Pedras, chegou</h1>

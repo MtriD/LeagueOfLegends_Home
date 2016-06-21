@@ -29,7 +29,7 @@ body {
     list-style: none;
     text-decoration: none;
     position: absolute;
-    line-height: 70px; 
+    line-height: 50px; 
     margin: 0 auto;
     padding: auto;
         }
@@ -62,7 +62,7 @@ body {
         }
 
         ul.menu-esquerda li a:hover, .submenu-esquerda li.over{
-            background-color: #059CC8;
+            background-color: #B78A29;
             color: #ffffff;
             display: block;
         }
@@ -95,8 +95,8 @@ body {
             display: none;
         }
 
-        ul.menu-direita li a:hover, .submenu-direita li.over{
-            background-color: #059CC8;
+        ul.menu-direita li a:hover, ul.submenu-direita li.over{
+            background-color: #B78A29;
             color: #ffffff;
             display: block;
         }

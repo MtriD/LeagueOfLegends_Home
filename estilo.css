@@ -36,70 +36,90 @@ body {
      	
      	/*menu topo esquerda */
 
+        .submenu-esquerda{
+            position: absolute;
+            z-index: 550;
+            text-align: left;
+            font-size: 15px;
+            padding-left: 0px;
+            left: 0px;
+            width: 120px;
+        }
+
         ul.menu-esquerda{
+            width: 450px;
+            height: 50px;
             text-align: left; 
         }
         ul.menu-esquerda li{
             position: relative;
-            float: left;
             display: inline-block;
             margin: 0 0px;
         }
         ul.menu-esquerda li a{
-            padding: 8px 8px;
             color: #B78A29;
             text-decoration: none;
             padding: 0 8px 0 8px;
             display: inline-block;
         }
 
-        ul.menu-esquerda li ul li a{
+        ul.menu-esquerda li ul{
             position: absolute;
             float: left;
-            top: 25px;
-            left: 0;
             display: none;
+        }
+
+        ul.menu-esquerda li:hover ul.submenu-esquerda {
+            display: block;
         }
 
         ul.menu-esquerda li a:hover, .submenu-esquerda li.over{
             background-color: #B78A29;
             color: #ffffff;
-            display: block;
         }
 
         /*Menu topo direita*/
 
+        .submenu-direita{
+            text-align: left;
+            font-size: 15px;
+            padding-left: 0px;
+            left: 0px;
+            width: 190px;
+        }
+
         ul.menu-direita{
+            position: relative;
+            margin-top: -65px;
             margin-left: 750px;
-            text-align: right; 
         }
         ul.menu-direita li{
             position: relative;
-            float: right;
             display: inline-block;
             margin: 0 0px;
         }
         ul.menu-direita li a{
-            padding: 8px 8px;
             color: #B78A29;
             text-decoration: none;
             padding: 0 8px 0 8px;
             display: inline-block;    
         }
 
-        ul.menu-direita li ul li a{
+        ul.menu-direita li ul{
             position: absolute;
             float: right;
-            top: 25px;
-            left: 0;
             display: none;
         }
 
-        ul.menu-direita li a:hover, ul.submenu-direita li.over{
-            background-color: #B78A29;
-            color: #ffffff;
+         ul.menu-direita li:hover ul.submenu-direita {
             display: block;
         }
+
+        ul.menu-direita li a:hover, .submenu-direita li.over{
+            background-color: #B78A29;
+            color: #ffffff;
+        }
+
 
 /* Botao Busca */
 
@@ -107,27 +127,44 @@ body {
     margin-top: 30px;
     float: right;
     margin-right: 60px;
-    background-color: transparent;
-    width:50px;
+    /*width:50px;
+    background-color:#2F4F4F;*/
+    /*border:solid 1px;*/
+    border-radius:15px;
+}
+
+.txtBusca{
+    color: #fff;
+    background-color: #2F4F4F;
+    position: relative;
+    float:right;
+    padding-left:5px;
+    font-style:italic;
+    font-size:18px;
+    border:none;
+    margin-top: 55px;
+    height:30px;
+    width:200px;
+    left: 50px;
+    border-radius:15px;
 }
  
 .MostrarBusca{
+    text-align: left;
     display: none;
     float: left;
     background-color: transparent;
-    padding-right:5px;
     font-style: italic;
     font-size: 16px;
-    border:none;
-    height: 40px;
+    border: none;
+    height: 80px;
     width: 180px;
 }
-
-    .btnBusca:hover{
-    height: 60px;
+#check-lupa {
+    display: none;
 }
 
-    .MostrarBusca:target {
+#check-lupa:checked + .MostrarBusca {
     display: block;
 }
 
@@ -141,9 +178,9 @@ body {
 }
 
 .square{
+    z-index: 10;
 	top: 180px;
 	left: 0;
-	z-index: 5;
 	position: fixed;
 	margin-left: 0px;
 	padding-left: 0px;
@@ -162,6 +199,7 @@ body {
 }
 
 .btcinza-1{
+    color: #000000;
     font: bold 20px "Playfair Display SC";
 	text-align: left;
     margin-left: 50px;
@@ -231,6 +269,7 @@ a.btcinza-1:after{
 }
 
 .btlaranja{
+    color: #000000;
 	font: bold 23px "Playfair Display SC";
 	text-align: center;
     background-image: url(imagens/botao-central-meio.png);

@@ -15,6 +15,7 @@ body {
 	width: 100%;
 	position: fixed;
 	background: url(imagens/textura-superior.png) no-repeat;
+    z-index: 1000;
 }
 
 #logo-home{

@@ -1,0 +1,293 @@
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url(imagens/Background.png);
+    background-repeat: repeat;
+    background-attachment: fixed;
+    font-family: Playfair Display SC;
+    font-size: 19px;
+}
+
+.header{
+    top: 0;
+    height: 240px;
+    width: 100%;
+    position: fixed;
+    background: url(imagens/textura-superior.png) no-repeat;
+}
+
+#logo-home{
+    z-index: 100;
+    position: relative;
+    width: 250px;
+    height: 94px;
+    left: 40%;
+    top: 10%; 
+}
+
+.menu-topo{
+    color: #B78A29;
+    z-index: 90;
+    list-style: none;
+    text-decoration: none;
+    position: absolute;
+    line-height: 50px; 
+    margin: 0 auto;
+    padding: auto;
+    bottom: 140px;
+    font-size: 18px;
+        }
+        
+        /*menu topo esquerda */
+
+        .submenu-esquerda{
+            z-index: 50;
+            position: absolute;
+            text-align: left;
+            font-size: 12px;
+            padding-left: 0px;
+            left: 0px;
+            width: 200px;
+            height: auto;
+            background-color: #1C2B2D;
+        }
+
+        ul.menu-esquerda{
+            width: 450px;
+            height: 50px;
+            text-align: left; 
+        }
+        ul.menu-esquerda li{
+            position: relative;
+            display: inline-block;
+            margin: 0 0px;
+        }
+        ul.menu-esquerda li a{
+            color: #B78A29;
+            text-decoration: none;
+            padding: 0 8px 0 8px;
+            display: inline-block;
+        }
+
+        ul.menu-esquerda li ul{
+            position: absolute;
+            float: left;
+            display: none;
+        }
+
+        ul.menu-esquerda li:hover ul.submenu-esquerda {
+            display: block;
+        }
+
+        ul.menu-esquerda li a:hover, .submenu-esquerda li.over{
+            background-color: #B78A29;
+            color: #ffffff;
+        }
+
+        /*Menu topo direita*/
+
+        .submenu-direita{
+            position: absolute;
+            text-align: left;
+            font-size: 12px;
+            padding-left: 0px;
+            left: 0px;
+            width: 160px;
+            height: auto;
+            background-color: #1C2B2D;
+        }
+
+        ul.menu-direita{
+            position: relative;
+            margin-top: -68px;
+            margin-left: 750px;
+        }
+        ul.menu-direita li{
+            position: relative;
+            display: inline-block;
+            margin: 0 0px;
+        }
+        ul.menu-direita li a{
+            color: #B78A29;
+            text-decoration: none;
+            padding: 0 8px 0 8px;
+            display: inline-block;    
+        }
+
+        ul.menu-direita li ul{
+            position: absolute;
+            float: right;
+            display: none;
+        }
+
+         ul.menu-direita li:hover ul.submenu-direita {
+            display: block;
+        }
+
+        ul.menu-direita li a:hover, .submenu-direita li.over{
+            background-color: #B78A29;
+            color: #ffffff;
+        }
+
+
+/* Botao Busca */
+
+.divBusca{
+    margin-top: 30px;
+    float: right;
+    margin-right: 60px;
+    border-radius:15px;
+}
+
+.txtBusca{
+    color: #fff;
+    background-color: #2F4F4F;
+    position: relative;
+    float:right;
+    padding-left:5px;
+    font-style:italic;
+    font-size:18px;
+    border:none;
+    margin-top: 55px;
+    height:30px;
+    width:200px;
+    left: 50px;
+    border-radius:15px;
+}
+ 
+.MostrarBusca{
+    text-align: left;
+    display: none;
+    float: left;
+    background-color: transparent;
+    font-style: italic;
+    font-size: 16px;
+    border: none;
+    height: 80px;
+    width: 180px;
+}
+#check-lupa {
+    display: none;
+}
+
+#check-lupa:checked + .MostrarBusca {
+    display: block;
+}
+
+/* Conteúdo */
+
+
+
+        /* Social Media Rodapé */
+
+#riot{
+    margin-right: 500px;
+    margin-left: 55px;
+    margin-top: -350px;
+}
+
+        ul.social-media{
+            margin-top: 1px;
+            margin-left: 5px;
+            text-align: left; 
+        }
+        ul.social-media li{
+            display: inline-block;
+            margin: 0 0px;
+        }
+        ul.social-media li a{
+            padding: 1px 1px;
+            color: #B78A29;
+        }
+        ul.social-media li a:hover{
+            background-color: transparent;
+        }
+
+.bt-maior{
+    left: 41%;
+    color: #ffffff;
+    z-index: 100;
+    position: absolute;
+    text-align: center;
+    top: 0;
+}
+
+.btlaranja{
+    position: relative;
+    top: 100px;
+    color: #000000;
+    font: bold 23px "Playfair Display SC";
+    text-align: center;
+    background-image: url(imagens/botao-central-meio.png);
+    background-repeat: repeat-x;
+    background-position: center;
+    line-height: 55px; 
+    display: inline-block;
+}
+a.btlaranja:before, a.btlaranja:after {
+    content: '';
+    display:inline-block;
+    width: 30px;
+    height: 56px;
+    vertical-align: middle;
+
+}
+a.btlaranja:before{
+
+    background: url(imagens/botao-central-esquerdo.png) top left no-repeat;
+
+}
+a.btlaranja:after{
+
+    background: url(imagens/botao-central-direita.png) top right no-repeat;
+
+}
+
+
+        ul.menu-simples-footer{
+            margin-right: 100px;
+            position: relative;
+            text-align: center;
+            font-size: 13px;
+            margin-top: 160px;
+            top: 55px;
+        }
+        ul.menu-simples-footer li{
+            display: inline-block;
+            margin: 0 0px;
+        }
+        ul.menu-simples-footer li a{
+            padding: 8px 8px;
+            color: #ffffff;
+        }
+        ul.menu-simples-footer li a:hover{
+            font: #059CC8;
+        }
+
+.texto-copy-right{
+            height:50px;
+            width:640px;
+            float: left;
+            position: relative;
+            text-align: center;
+            font-size: 13px;
+            margin-left: 280px; 
+            top: 65px;
+            color: #ffffff;
+}
+
+#pvp{
+    float: right;
+    margin-left: 1000px;
+    margin-top: -150px;
+    margin-right: 20px;
+}
+
+.footer{
+    bottom: -540px;
+    width: 100%;
+    height: 392px;
+    position: absolute;
+    background: url(imagens/textura-inferior.png) no-repeat;
+}

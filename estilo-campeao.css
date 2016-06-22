@@ -10,6 +10,7 @@ body {
 }
 
 .header{
+    z-index: 1000;
     top: 0;
     height: 240px;
     width: 100%;
@@ -76,6 +77,10 @@ body {
             display: none;
         }
 
+        ul.menu-esquerda li ul li, ul.menu-esquerda li ul li a{
+            display: block;
+        }
+
         ul.menu-esquerda li:hover ul.submenu-esquerda {
             display: block;
         }
@@ -119,6 +124,10 @@ body {
             position: absolute;
             float: right;
             display: none;
+        }
+
+        ul.menu-direita li ul li, ul.menu-direita li ul li a{
+            display: block;
         }
 
          ul.menu-direita li:hover ul.submenu-direita {

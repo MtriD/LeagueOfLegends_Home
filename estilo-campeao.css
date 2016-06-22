@@ -19,7 +19,7 @@ body {
 }
 
 #logo-home{
-    z-index: 90;
+    z-index: 100;
     position: relative;
     width: 250px;
     height: 94px;

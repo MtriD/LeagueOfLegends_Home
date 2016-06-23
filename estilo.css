@@ -1,5 +1,4 @@
 body {
-	height: 100%;
 	margin: 0;
 	padding: 0;
 	background-image: url(imagens/Background.png);
@@ -10,187 +9,70 @@ body {
 }
 
 .header{
-    top: 0;
-	height: 240px;
+	height: 260px;
 	width: 100%;
-	position: fixed;
+	position: absolute;
 	background: url(imagens/textura-superior.png) no-repeat;
-    z-index: 1000;
 }
 
 #logo-home{
-    z-index: 90;
-	position: relative;
-    width: 250px;
-    height: 94px;
+	position: absolute;
 	left: 40%;
-	top: 10%; 
+	top: 25%; 
 }
 
-.menu-topo{
-    color: #B78A29;
-    z-index: 90;
-    list-style: none;
-    text-decoration: none;
-    position: absolute;
-    line-height: 50px; 
+#menu-topo{
+	position: absolute;
+    width: 580px;
+    height: 80px;
+    line-height: 140px; 
     margin: 0 auto;
-    padding: auto;
-    bottom: 140px;
-    font-size: 18px;
         }
      	
      	/*menu topo esquerda */
 
-        .submenu-esquerda{
-            z-index: 50;
-            position: absolute;
-            text-align: left;
-            font-size: 12px;
-            padding-left: 0px;
-            left: 0px;
-            width: 200px;
-            height: auto;
-            background-color: #1C2B2D;
-        }
-
         ul.menu-esquerda{
-            width: 450px;
-            height: 50px;
             text-align: left; 
         }
         ul.menu-esquerda li{
-            position: relative;
             display: inline-block;
+            margin-left: 10px;
             margin: 0 0px;
         }
         ul.menu-esquerda li a{
+            padding: 8px 8px;
             color: #B78A29;
-            text-decoration: none;
-            padding: 0 8px 0 8px;
-            display: inline-block;
         }
-
-        ul.menu-esquerda li ul{
-            position: absolute;
-            float: left;
-            display: none;
-        }
-
-        ul.menu-esquerda li ul li, ul.menu-esquerda li ul li a{
-            display: block;
-        }
-
-        ul.menu-esquerda li:hover ul.submenu-esquerda {
-            display: block;
-        }
-
-        ul.menu-esquerda li a:hover, .submenu-esquerda li.over{
-            background-color: #B78A29;
-            color: #ffffff;
+        ul.menu-esquerda li a:hover{
+            background-color: #059CC8;
         }
 
         /*Menu topo direita*/
 
-        .submenu-direita{
-            position: absolute;
-            text-align: left;
-            font-size: 12px;
-            padding-left: 0px;
-            left: 0px;
-            width: 160px;
-            height: auto;
-            background-color: #1C2B2D;
-        }
-
         ul.menu-direita{
-            position: relative;
-            margin-top: -68px;
-            margin-left: 750px;
+        	margin-top: -158px;
+        	margin-right: -515px;
+            text-align: right; 
         }
         ul.menu-direita li{
-            position: relative;
             display: inline-block;
             margin: 0 0px;
         }
         ul.menu-direita li a{
+            padding: 8px 8px;
             color: #B78A29;
-            text-decoration: none;
-            padding: 0 8px 0 8px;
-            display: inline-block;    
+        }
+        ul.menu-direita li a:hover{
+            background-color: #059CC8;
         }
 
-        ul.menu-direita li ul{
-            position: absolute;
-            float: right;
-            display: none;
-        }
+.button-procurar{
 
-        ul.menu-direita li ul li, ul.menu-direita li ul li a{
-            display: block;
-        }
-
-         ul.menu-direita li:hover ul.submenu-direita {
-            display: block;
-        }
-
-        ul.menu-direita li a:hover, .submenu-direita li.over{
-            background-color: #B78A29;
-            color: #ffffff;
-        }
-
-
-/* Botao Busca */
-
-.divBusca{
-    margin-top: 30px;
-    float: right;
-    margin-right: 60px;
-    border-radius:15px;
-}
-
-.txtBusca{
-    color: #fff;
-    background-color: #2F4F4F;
-    position: relative;
-    float:right;
-    padding-left:5px;
-    font-style:italic;
-    font-size:18px;
-    border:none;
-    margin-top: 55px;
-    height:30px;
-    width:200px;
-    left: 50px;
-    border-radius:15px;
-}
- 
-.MostrarBusca{
-    text-align: left;
-    display: none;
-    float: left;
-    background-color: transparent;
-    font-style: italic;
-    font-size: 16px;
-    border: none;
-    height: 80px;
-    width: 180px;
-}
-#check-lupa {
-    display: none;
-}
-
-#check-lupa:checked + .MostrarBusca {
-    display: block;
-}
-
-/* Conteúdo */
-
-.slider-texto{
-    font-size: 13px;
-	color: #B78A29;
-	height: 20px; 
-	width: 500px;
+		background-color: Transparent;
+        background-repeat:no-repeat;
+        border: none;
+        cursor:pointer;
+        overflow: hidden;
 }
 
 .square{
@@ -203,9 +85,14 @@ body {
 	height: 210px;
 	background-color: rgba(0,0,0,0.55);
 }
+.imagem-busca{
+	position: absolute;
+    margin-left: 1150px;
+    margin-top: -142px;
+}
 
-.square h1, h3{
-	padding-left: 50px;
+#caixa-texto{
+	display: none;
 }
 
 .slider{
@@ -237,125 +124,11 @@ a.btcinza-1:before, a.btcinza-1:after {
 a.btcinza-1:before{
 
     background: url(imagens/bg-botao-cinza-esquerdo.png) top left no-repeat;
-
-}
-a.btcinza-1:after{
-
-    background: url(imagens/bg-botao-cinza-direita.png) top right no-repeat;
-
+	height: 300px;
 }
 
-#imagem1{
-	margin-top: 70px;
-    width: 100%;
-}
-
-		/* Social Media Rodapé */
-
-#riot{
-    margin-right: 500px;
-    margin-left: 55px;
-    margin-top: -350px;
-}
-
- 		ul.social-media{
- 			margin-top: 1px;
-        	margin-left: 5px;
-            text-align: left; 
-        }
-        ul.social-media li{
-            display: inline-block;
-            margin: 0 0px;
-        }
-        ul.social-media li a{
-            padding: 1px 1px;
-            color: #B78A29;
-        }
-        ul.social-media li a:hover{
-            background-color: transparent;
-        }
-
-.bt-maior{
-    color: #ffffff;
-    z-index: 100;
-    position: relative;
-    text-align: center;
-    margin-top: 600px;
-}
-
-.btlaranja{
-    color: #000000;
-	font: bold 23px "Playfair Display SC";
-	text-align: center;
-    background-image: url(imagens/botao-central-meio.png);
-    background-repeat: repeat-x;
-    background-position: center;
-    line-height: 55px; 
-    display: inline-block;
-}
-a.btlaranja:before, a.btlaranja:after {
-    content: '';
-    display:inline-block;
-    width: 30px;
-    height: 56px;
-    vertical-align: middle;
-
-}
-a.btlaranja:before{
-
-    background: url(imagens/botao-central-esquerdo.png) top left no-repeat;
-
-}
-a.btlaranja:after{
-
-    background: url(imagens/botao-central-direita.png) top right no-repeat;
-
-}
-
-
-		ul.menu-simples-footer{
-            margin-right: 100px;
-            position: relative;
-            text-align: center;
-            font-size: 13px;
-            margin-top: 160px;
-            top: 55px;
-        }
-        ul.menu-simples-footer li{
-            display: inline-block;
-            margin: 0 0px;
-        }
-        ul.menu-simples-footer li a{
-            padding: 8px 8px;
-            color: #ffffff;
-        }
-        ul.menu-simples-footer li a:hover{
-            font: #059CC8;
-        }
-
-.texto-copy-right{
-			height:50px;
-			width:640px;
-			float: left;
-			position: relative;
-            text-align: center;
-            font-size: 13px;
-			margin-left: 280px; 
-            top: 65px;
-            color: #ffffff;
-}
-
-#pvp{
-	float: right;
-    margin-left: 1000px;
-    margin-top: -150px;
-    margin-right: 20px;
-}
-
-.footer{
-	bottom: -540px;
-	width: 100%;
-    height: 392px;
-	position: absolute;
-	background: url(imagens/textura-inferior.png) no-repeat;
+.social-media{
+	list-style: none;
+	display: inline-block;
+	padding: 8px; 8px;
 }

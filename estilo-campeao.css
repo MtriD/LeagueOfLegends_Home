@@ -10,7 +10,7 @@ body {
 }
 
 .header{
-    z-index: 1000;
+    z-index: 90;
     top: 0;
     height: 240px;
     width: 100%;
@@ -24,7 +24,7 @@ body {
     width: 250px;
     height: 94px;
     left: 40%;
-    top: 10%; 
+    top: 25px;
 }
 
 .menu-topo{
@@ -35,6 +35,7 @@ body {
     position: absolute;
     line-height: 50px; 
     margin: 0 auto;
+    top: 15px;
     padding: auto;
     bottom: 140px;
     font-size: 18px;
@@ -143,10 +144,10 @@ body {
 /* Botao Busca */
 
 .divBusca{
-    margin-top: 30px;
+    margin-left: 80px;
     float: right;
-    margin-right: 60px;
-    border-radius:15px;
+    position: relative;
+    z-index: 150;
 }
 
 .txtBusca{

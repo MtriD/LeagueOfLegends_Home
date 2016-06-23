@@ -15,14 +15,12 @@ body {
 	width: 100%;
 	position: fixed;
 	background: url(imagens/textura-superior.png) no-repeat;
-    z-index: 1000;
+    z-index: 90;
 }
 
 #logo-home{
-    z-index: 90;
-	position: relative;
-    width: 250px;
-    height: 94px;
+    z-index: 100;
+	position: absolute;
 	left: 40%;
 	top: 10%; 
 }
@@ -214,7 +212,7 @@ body {
 }
 
 .btcinza-1{
-    color: #ffffff;
+    color: #B78A29;
     font: bold 20px "Playfair Display SC";
 	text-align: left;
     margin-left: 50px;

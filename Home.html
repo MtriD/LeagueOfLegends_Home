@@ -1,10 +1,19 @@
 <!DOCTYPE html>
 	<head>
 		<meta charset="UTF-8">
-		<link type="text/css" rel="stylesheet" href="estilo.css"/>
+			
+			<link rel="stylesheet" type="text/css" href="estilo.css">
+			
 			<style type="text/css"> a:link { text-decoration:none; } </style>
+		
 		<title>League of Legends</title>
+
+		<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+		<script type="text/javascript" src="jquery-3.0.0.min.js"></script>
+
 	</head>
+	
 	<body>
 
 		<!-- Menu Topo -->
@@ -94,13 +103,14 @@
 
 		<!-- Content -->
 
-			<div class="slider">
-				<img id="imagem1" src="imagens/Slider_Imagem_1.png">
-				<!-- <img id="imagem2" src="#">
-				<img id="imagem3" src="#">	-->
+			<div id="slider-example" class="slider-carousel">
+				<div ><img id="imagem1" src="imagens/Slider_Imagem_1.png"></div>
+				<div ><img id="imagem2" src="imagens/Slider_Imagem_2.jpg"></div>
+				<div ><img id="imagem3" src="imagens/Slider_Imagem_3.jpg"></div>
 				</div>
 
-				<div class="slider-texto">
+
+<!-- 				<div class="slider-texto">
 					
 					<ul>
 						<li class="square">
@@ -110,7 +120,7 @@
 							<a href="#" class="btcinza-1">Comece a Jornada</a>
 							</div>	
 						</li>
-					<!--	<li>
+						<li>
 							<h1>Taliyah, a Tecelã de Pedras, chegou</h1>
 							<h3>As areias shurimanes deslocam-se...</h3>
 							<button type="button" class="btcinza-2">Pedras vão Rolar</button>
@@ -119,8 +129,31 @@
 							<h1>Grande Final do CBLol!</h1>
 							<h3>Segunda Etapa diretamente da arquibancada da Arena das Dunas, em Natal – RN.</h3>
 							<button type="button" class="btcinza-3">Assista Ao Vivo</button>
-						</li> -->
-				
+						</li>
+					</ul> -->
+
+				<script type="text/javascript" ></script>
+
+				<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+				<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+				<script type="text/javascript" src="slick/slick.min.js"></script>
+
+	<script type="text/javascript">
+
+		$(document).ready(function() {
+ 
+  			$("#slider-example").slick({
+ 			
+  			slidesToShow: 1,
+  			slidesToScroll: 1,
+  			autoplay: true,
+  			autoplaySpeed: 2000,
+			});
+ 
+		});
+
+				</script>
+
 				<!-- Fim do content -->
 
 					</ul>
@@ -168,5 +201,8 @@
 					</div>
 			
 		</div>
+
+			
+
 	</body>
 </html>

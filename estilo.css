@@ -19,7 +19,7 @@ body {
 }
 
 #logo-home{
-    z-index: 100;
+    z-index: 130;
 	position: absolute;
 	left: 40%;
 	top: 10%; 
@@ -27,7 +27,7 @@ body {
 
 .menu-topo{
     color: #B78A29;
-    z-index: 90;
+    z-index: 110;
     list-style: none;
     text-decoration: none;
     position: absolute;
@@ -206,9 +206,17 @@ body {
 	padding-left: 50px;
 }
 
-.slider{
+.slider-carousel{
+    z-index: 1;
 	width: 100%; 
 	height: 250px;
+}
+
+#slider-exemple{
+  margin: 3px;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .btcinza-1{
@@ -248,6 +256,16 @@ a.btcinza-1:after{
     width: 100%;
 }
 
+#imagem2{
+    margin-top: 70px;
+    width: 100%;
+}
+
+#imagem3{
+    margin-top: 70px;
+    width: 100%;
+}
+
 		/* Social Media Rodapé */
 
 #riot{
@@ -275,10 +293,10 @@ a.btcinza-1:after{
 
 .bt-maior{
     color: #ffffff;
-    z-index: 100;
+    z-index: 30;
     position: relative;
     text-align: center;
-    margin-top: 600px;
+    margin-top: 650px;
 }
 
 .btlaranja{
@@ -351,6 +369,7 @@ a.btlaranja:after{
 }
 
 .footer{
+    z-index: 15;
 	bottom: -540px;
 	width: 100%;
     height: 392px;

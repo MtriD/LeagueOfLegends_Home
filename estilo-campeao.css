@@ -5,37 +5,34 @@ body {
     background-image: url(imagens/Background.png);
     background-repeat: repeat;
     background-attachment: fixed;
-    font-family: Playfair Display SC;
+    font-family: "Playfair Display SC";
     font-size: 19px;
 }
 
 .header{
-    z-index: 90;
     top: 0;
     height: 240px;
     width: 100%;
     position: fixed;
     background: url(imagens/textura-superior.png) no-repeat;
+    z-index: 90;
 }
 
 #logo-home{
-    z-index: 100;
-    position: relative;
-    width: 250px;
-    height: 94px;
+    z-index: 130;
+    position: absolute;
     left: 40%;
-    top: 25px;
+    top: 10%; 
 }
 
 .menu-topo{
     color: #B78A29;
-    z-index: 90;
+    z-index: 110;
     list-style: none;
     text-decoration: none;
     position: absolute;
     line-height: 50px; 
     margin: 0 auto;
-    top: 15px;
     padding: auto;
     bottom: 140px;
     font-size: 18px;
@@ -144,10 +141,10 @@ body {
 /* Botao Busca */
 
 .divBusca{
-    margin-left: 80px;
+    margin-top: 30px;
     float: right;
-    position: relative;
-    z-index: 150;
+    margin-right: 60px;
+    border-radius:15px;
 }
 
 .txtBusca{
@@ -189,6 +186,7 @@ body {
 
 
 
+
         /* Social Media Rodapé */
 
 #riot{
@@ -215,17 +213,14 @@ body {
         }
 
 .bt-maior{
-    left: 41%;
     color: #ffffff;
-    z-index: 100;
-    position: absolute;
+    z-index: 30;
+    position: relative;
     text-align: center;
-    top: 0;
+    margin-top: 650px;
 }
 
 .btlaranja{
-    position: relative;
-    top: 100px;
     color: #000000;
     font: bold 23px "Playfair Display SC";
     text-align: center;
@@ -295,6 +290,7 @@ a.btlaranja:after{
 }
 
 .footer{
+    z-index: 15;
     bottom: -540px;
     width: 100%;
     height: 392px;

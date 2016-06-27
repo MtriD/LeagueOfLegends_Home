@@ -10,7 +10,7 @@ body {
 }
 
 .header{
-    z-index: 1000;
+    z-index: 90;
     top: 0;
     height: 240px;
     width: 100%;
@@ -19,7 +19,7 @@ body {
 }
 
 #logo-home{
-    z-index: 90;
+    z-index: 100;
     position: relative;
     width: 250px;
     height: 94px;

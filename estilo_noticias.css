@@ -237,13 +237,43 @@ body {
     top: 27px;
     left: 9px;
 }
+
+
 .Noticias-mais-recentes h1{
     position: absolute;
     top: 720;
-    left: 87;
+    left: 79;
     color: #B78A29;
     font-family: "Source Serif Pro";
+    font-size: 30px;
 }
+.Caixa01{
+    position: absolute;
+    left: 40px;
+    background-color: rgba(1,1,1,0.9);
+    height: 352px;
+    width: 362px;
+    top: 830px;
+    left: 80px;
+}
+.noticias-promocao{
+    position: absolute;
+    left: 40px;
+    width: 444px;
+    top: 444px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

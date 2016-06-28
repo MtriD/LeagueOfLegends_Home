@@ -186,7 +186,7 @@ body {
 
 /* Conteúdo */
 .Destaque{
-    position: absolute;
+    position: relative;
     left: 40px;
     background-color: rgba(1,1,1,0.9);
     height: 540px;
@@ -219,16 +219,16 @@ body {
     font-size: 12px;
 }
 .Destaque h3{
-    position: absolute;
-    top: 398px;
-    left: 9px;
+    position: relative;
+    top: 418px;
+    left: -32px;
     color: #B78A29;
     font-family: "Source Serif Pro";
 }
 .Destaque h4{
-    position: absolute;
-    top: 430px;
-    left: 9px;
+    position: relative;
+    top: 400px;
+    left: -30px;
     color: #FFFFFF;
     font-family: "Source Serif Pro";
 }
@@ -240,14 +240,21 @@ body {
 
 
 .Noticias-mais-recentes h1{
-    position: absolute;
-    top: 720;
-    left: 79;
+    z-index: 500;
+    position: relative;
+    top: 200px;
+    left: 88px;
     color: #B78A29;
     font-family: "Source Serif Pro";
     font-size: 30px;
 }
-.Caixa01{
+
+#titulo-recente{
+    display: flex;
+    position: relative;
+}
+
+.Conteudo-caixa{
     position: absolute;
     left: 40px;
     background-color: rgba(1,1,1,0.9);
@@ -261,11 +268,9 @@ body {
     left: 40px;
     width: 444px;
     top: 444px;
+    color: #FFFFFF;
+    font-family: "Source Serif Pro";
 }
-
-}
-
-
 
 
 

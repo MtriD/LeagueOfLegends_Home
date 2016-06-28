@@ -201,6 +201,15 @@ body {
     
 }
 
+.Grade-Campeao{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 624px;
+    height: 800px;
+    left: 300px;
+}
+
         /* Social Media Rodapé */
 
 #riot{

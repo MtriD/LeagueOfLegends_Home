@@ -7,6 +7,7 @@ body {
     background-attachment: fixed;
     font-family: "Playfair Display SC";
     font-size: 19px;
+
 }
 
 .header{
@@ -183,9 +184,22 @@ body {
 }
 
 /* Conteúdo */
+.box-escolha {
 
-
-
+    height: 500px; 
+    width: 260px;
+    background-color: rgba(1,1,1,0.9);
+    color: #b78a29;
+    text-decoration: none;
+    position: relative;
+    top: 180px;
+}
+.titulo-escolha h2 {
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 20px;
+    
+}
 
         /* Social Media Rodapé */
 

@@ -185,6 +185,65 @@ body {
 }
 
 /* Conteúdo */
+.Destaque{
+    position: absolute;
+    left: 40px;
+    background-color: rgba(1,1,1,0.9);
+    height: 540px;
+    width: 1170px;
+    top: 180px;
+    left: 80px;
+
+}
+.Destaque h1{
+    position: absolute;
+    top: -59px;
+    left: 8px;
+    color: #B78A29;
+    font-family: "Source Serif Pro";
+    font-size: 30px;
+}
+.Destaque h6{
+    position: absolute;
+    top: -24px;
+    left: 1051px;
+    color: #FFFFFF;
+    font-family: "Source Serif Pro";
+}
+.Destaque h5{
+    position: absolute;
+    top: 490px;
+    left: 1090px;
+    color: #FFFFFF;
+    font-family: "Source Serif Pro";
+    font-size: 12px;
+}
+.Destaque h3{
+    position: absolute;
+    top: 398px;
+    left: 9px;
+    color: #B78A29;
+    font-family: "Source Serif Pro";
+}
+.Destaque h4{
+    position: absolute;
+    top: 430px;
+    left: 9px;
+    color: #FFFFFF;
+    font-family: "Source Serif Pro";
+}
+.imagem-destaque{
+    position: absolute;
+    top: 27px;
+    left: 9px;
+}
+.Noticias-mais-recentes h1{
+    position: absolute;
+    top: 720;
+    left: 87;
+    color: #B78A29;
+    font-family: "Source Serif Pro";
+}
 
 
 

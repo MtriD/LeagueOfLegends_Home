@@ -185,7 +185,7 @@ body {
 
 /* Conteúdo */
 .box-escolha {
-
+    position: fixed;
     height: 500px; 
     width: 260px;
     background-color: rgba(1,1,1,0.9);
@@ -215,7 +215,6 @@ margin-bottom: 15px;
     }
 
 .Grade-Campeao{
-    position: relative;
     display: flex;
     flex-wrap: wrap;
     width: 800px;

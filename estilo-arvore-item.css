@@ -1,0 +1,130 @@
+body {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+	background-color: black;
+	background: rgba(1,1,1,0.9);
+	font-family: "Playfair Display SC";
+	font-size: 19px;
+	color: #B78A29;
+}
+
+.topo{
+	position: absolute;
+	top: -10px;
+    left: auto;
+}
+
+.titulo{
+	z-index: 5;
+	position: absolute;
+	top: 30px;
+    left: 80px;
+}
+
+.titulo h3{
+	margin-top: 0px;
+}
+
+.titulo h1{
+	margin-bottom: 0px;
+}
+
+.conteiner{
+	position: relative;
+	width: 1154px;
+	height: 1188px;
+	margin-top: 380px;
+	margin-left: 110px;
+	margin-right: 110px;
+	margin-bottom: 110px;
+}
+
+.feiticos{
+	position: relative;
+	text-align: center;
+	display: inline-block;
+	width: 330px;
+	height: 284px;
+	top: -10px;
+
+}
+
+.feitico-box{
+	justify-content: space-between;
+}
+
+#imagem-feitico{
+	width: 130px;
+	height: 130px;
+}
+
+.feitico-esquerda{
+	position: absolute;
+	width: 130px;
+	height: 130px;
+}
+
+.feitico-direita{
+	position: absolute;
+	width: 130px;
+	height: 130px;
+	left: 200px;
+}
+
+.talentos{
+	position: relative;
+	text-align: center;
+	float: right;
+	width: 690px;
+	height: 420px;
+	top: -10px;
+	left: 40px;
+}
+
+.runas-conteudo{
+	top: 55px;
+	flex-direction: row;
+	position: relative;
+	width: 400px;
+	height: 614px;
+	text-align: center;
+}
+
+.box-runas{
+	width: 180px;
+	height: 230px;
+	background-color: #002832;
+	border: solid 1px #111111;
+	margin: 0;
+}
+
+.box-runas h3{
+	font-size: 14px;
+}
+
+.box-runas h2{
+	font-size: 25px;
+}
+
+.runa-esquerda{
+	position: relative;
+}
+
+.runa-direita{
+	position: relative;
+	top: -232px;
+	left: 200px;
+}
+
+.conteudo-arvore{
+	position: relative;
+	text-align: center;
+	float: right;
+	top: -480px;
+}
+
+.conteudo-skill{
+	position: absolute;
+}

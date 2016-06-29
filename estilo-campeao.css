@@ -191,25 +191,46 @@ body {
     background-color: rgba(1,1,1,0.9);
     color: #b78a29;
     text-decoration: none;
-    position: relative;
+    position: fixed;
     top: 180px;
+}
+.escolha-de-campeoes {
+ 
+   font-size: 25px;
+   padding-top: 20px;
+   padding-left: 80px;
+   margin-bottom: 40px;
+}
+.escolha-de-campeoes li {
+margin-bottom: 15px;
 }
 .titulo-escolha h2 {
     text-align: center;
-    margin-top: 10px;
+    margin-top: 30px;
     padding-top: 20px;
-    
-}
+    }
+    .escolha-de-campeoes li a {
+        color: #b78a29;
+
+    }
 
 .Grade-Campeao{
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    width: 624px;
+    width: 800px;
     height: 800px;
-    left: 300px;
+    left: 400px;
+    top: 180px;
+    justify-content: space-between;
 }
 
+.Grade-Campeao a {
+    width: 120px;
+    height: 120px;
+
+
+}
         /* Social Media Rodapé */
 
 #riot{

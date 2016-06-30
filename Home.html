@@ -104,33 +104,47 @@
 		<!-- Content -->
 
 			<div id="slider-example" class="slider-carousel">
-				<div ><img id="imagem1" src="imagens/Slider_Imagem_1.png"></div>
-				<div ><img id="imagem2" src="imagens/Slider_Imagem_2.jpg"></div>
-				<div ><img id="imagem3" src="imagens/Slider_Imagem_3.jpg"></div>
+				<div><img id="imagem1" src="imagens/Slider_Imagem_1.png"> 
+					
+				<div class="square">
+					<div class="slider-texto">
+							<h1>Em frente; a Shurima!</h1>
+									<h3>É o início de uma nova era e o futuro de Shurima está por um fio...</h3>
+								<div class="btcinza">
+								<a href="#" class="btcinza-1">Comece a Jornada</a>
+								</div>
+							</div>	
+						</div>
 				</div>
 
+				<div ><img id="imagem2" src="imagens/Slider_Imagem_2.jpg">
 
-<!-- 				<div class="slider-texto">
-					
-					<ul>
-						<li class="square">
-							<h1>Em frente; a Shurima!</h1>
-							<h3>É o início de uma nova era e o futuro de Shurima está por um fio...</h3>
-							<div class="btcinza">
-							<a href="#" class="btcinza-1">Comece a Jornada</a>
-							</div>	
-						</li>
-						<li>
+					<div class="square">
+						<div class="slider-texto">
 							<h1>Taliyah, a Tecelã de Pedras, chegou</h1>
-							<h3>As areias shurimanes deslocam-se...</h3>
-							<button type="button" class="btcinza-2">Pedras vão Rolar</button>
-						</li>
-						<li>
+									<h3>As areias shurimanes deslocam-se...</h3>
+								<div class="btcinza">
+								<a href="#" class="btcinza-1">Pedras vão Rolar</a>
+								</div>
+							</div>	
+						</div>
+
+				</div>
+
+				<div ><img id="imagem3" src="imagens/Slider_Imagem_3.jpg">
+
+						<div class="square">
+							<div class="slider-texto">
 							<h1>Grande Final do CBLol!</h1>
-							<h3>Segunda Etapa diretamente da arquibancada da Arena das Dunas, em Natal – RN.</h3>
-							<button type="button" class="btcinza-3">Assista Ao Vivo</button>
-						</li>
-					</ul> -->
+									<h3>Segunda Etapa diretamente da arquibancada da Arena das Dunas, em Natal – RN.</h3>
+								<div class="btcinza">
+								<a href="#" class="btcinza-1">Assista Ao Vivo</a>
+								</div>
+							</div>	
+						</div>
+
+				</div>
+			</div>
 
 				<script type="text/javascript" ></script>
 
@@ -143,6 +157,14 @@
 		$(document).ready(function() {
  
   			$("#slider-example").slick({
+ 			
+  			slidesToShow: 1,
+  			slidesToScroll: 1,
+  			autoplay: true,
+  			autoplaySpeed: 2000,
+			});
+ 
+  			$(".square").slick({
  			
   			slidesToShow: 1,
   			slidesToScroll: 1,

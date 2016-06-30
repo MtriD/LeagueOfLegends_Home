@@ -184,7 +184,12 @@ body {
 
 /* Conteúdo */
 
+.box-1{
+    z-index: 300;
+}
+
 .slider-texto{
+    z-index: 400;
     font-size: 13px;
 	color: #B78A29;
 	height: 20px; 
@@ -192,9 +197,9 @@ body {
 }
 
 .square{
-	top: 180px;
-	left: 0;
-	position: absolute;
+    position: absolute;
+    bottom: 800px;
+    z-index: 400;
 	margin-left: 0px;
 	padding-left: 0px;
 	width: 480px;
@@ -207,6 +212,7 @@ body {
 }
 
 .slider-carousel{
+    position: relative;
     z-index: 1;
 	width: 100%; 
 	height: 250px;
@@ -252,17 +258,17 @@ a.btcinza-1:after{
 }
 
 #imagem1{
-	margin-top: 70px;
+	margin-top: 80px;
     width: 100%;
 }
 
 #imagem2{
-    margin-top: 70px;
+    margin-top: 80px;
     width: 100%;
 }
 
 #imagem3{
-    margin-top: 70px;
+    margin-top: 80px;
     width: 100%;
 }
 
@@ -370,7 +376,7 @@ a.btlaranja:after{
 
 .footer{
     z-index: 15;
-	bottom: -540px;
+	bottom: -585px;
 	width: 100%;
     height: 392px;
 	position: absolute;

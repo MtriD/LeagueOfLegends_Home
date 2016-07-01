@@ -1,12 +1,22 @@
 <!DOCTYPE html>
 	<head>
 		<meta charset="UTF-8">
-			
+
 			<link rel="stylesheet" type="text/css" href="estilo-campeao.css">
-			
 			<style type="text/css"> a:link { text-decoration:none; } </style>
 		
 		<title>League of Legends - Campeões</title>
+
+			<link rel="stylesheet" href="colorbox/colorbox.css" />
+			<script type="text/javascript" src="jquery-3.0.0.min.js"></script>
+			<script src="colorbox/jquery.colorbox.js"></script>
+
+		<script>
+			$(document).ready(function(){
+		
+			$(".lightBox").colorbox({lightBox:true, width:"80%", height:"100%"});
+
+		</script>
 
 	</head>
 	
@@ -15,7 +25,7 @@
 		<!-- Menu Topo -->
 
 		<div class="header">
-			<a href="file:///Users/augustolunardelli/GitHub/LeagueOfLegends_Home/Home.html" id="logo-home">
+			<a href="Home.html" id="logo-home">
 				<img src="imagens/logo-LOL.png"/>
 			</a>	
 
@@ -26,25 +36,21 @@
 					<li><a title="Como Jogar" href="#">COMO JOGAR</a>
 						<ul class="submenu-esquerda">
 							<li><a href="#">O que é LoL?</a></li>
-							<li><a href="#">Campeões</a></li>
+							<li><a href="Campeoes.html">Campeões</a></li>
 							<li><a href="#">Itens</a></li>
 							<li><a href="#">Talentos</a></li>
 							<li><a href="#">Runas</a></li>
 							<li><a href="#">Feitiços</a></li>
-							<li><a href="#">Guia do Jogador</a></li>
-							<li><a href="#">Comandos de Chat</a></li>
-							<li><a href="#">Adicionar Amigos</a></li>
 							<li><a href="#">Modos de Jogo</a></li>
-							<li><a href="#">Código dos Invocadores</a></li>
 						</ul>
 					</li>
 
-					<li><a title="Notícias" href="file:///Users/augustolunardelli/GitHub/LeagueOfLegends_Home/Noticias.html">NOTÍCIAS</a></li>
+					<li><a title="Notícias" href="Noticias.html">NOTÍCIAS</a></li>
 					<li><a title="E-Sport" href="#">E-SPORT</a>
 						<ul class="submenu-esquerda">
 							<li><a href="#">CBLOL</a></li>
 							<li><a href="#">Times</a></li>
-							<li><a href="#">Notícias</a></li>
+							<li><a href="noticias.html">Notícias</a></li>
 							<li><a href="#">Agenda</a></li>
 							<li><a href="#">Ao Vivo</a></li>
 							<li><a href="#">Vídeos</a></li>
@@ -53,6 +59,10 @@
 
 					<li><a title="Suporte" href="#">SUPORTE</a>
 						<ul class="submenu-esquerda">
+							<li><a href="#">Guia do Jogador</a></li>
+							<li><a href="#">Comandos de Chat</a></li>
+							<li><a href="#">Adicionar Amigos</a></li>
+							<li><a href="#">Código dos Invocadores</a></li>
 							<li><a href="#">Download</a></li>
 							<li><a href="#">Sistema</a></li>
 							<li><a href="#">FAQ</a></li>
@@ -98,81 +108,119 @@
 		</div>
 		<!-- Conteúdo -->
 
-		<div class="box-escolha">
-		<div class="titulo-escolha"> 
-		<h2>Escolha de Campeões</h2>
-		 </div>
-			<ul class="escolha-de-campeoes">
-					<li><input type="radio" name="Assassino" value="valor"/>Assassino</li>
-					<li><a title="Lutador" href="#">Lutador</a></li>
-					<li><a title="Mago" href="#">Mago</a></li>
-					<li><a title="Suporte" href="#">Suporte</a></li>
-					<li><a title="Tanque" href="#">Tanque</a></li>
-					<li><a title="Atirador" href="#">Atirador</a></li>
+	<div class="conteiner">
 
-				</ul>
-				<button type="button">Botão</button>
+		<div class="box-escolha">
+			<div class="titulo-escolha"> 
+				<h2>Escolha de Campeões</h2>
+			</div>
+			
+			<div class="escolha-de-campeoes">
+					<div class="escolha-campeao imagem-escolha">	<input type="radio" name="Assassino" id="botao-radio"/>
+						Assassino<label for="Assassino">Assassino</label>
+					</div>
+
+					<div class="escolha-campeao imagem-escolha">	<input type="radio" name="Lutador" id="botao-radio"/>
+						Lutador<label for="Lutador">Lutador</label>
+					</div>
+
+					<div class="escolha-campeao imagem-escolha">	<input type="radio" name="Mago" id="botao-radio"/>
+						Mago<label for="Mago">Mago</label>
+					</div>
+
+					<div class="escolha-campeao imagem-escolha">	<input type="radio" name="Suporte" id="botao-radio"/>
+						Suporte<label for="Suporte">Suporte</label>
+					</div>
+
+					<div class="escolha-campeao imagem-escolha">	<input type="radio" name="Tanque" id="botao-radio"/>
+						Tanque<label for="Tanque">Tanque</label>
+					</div>
+
+					<div class="escolha-campeao imagem-escolha">	<input type="radio" name="Atirador" id="botao-radio"/>
+						Atirador<label for="Atirador">Atirador</label>
+					</div>
+
+				</div>
+
+				<div class="btcinza">
+					<a href="#" class="btcinza-1">Buscar</a>
+				</div>
+
 		</div>
 
 		<div class="Grade-Campeao">
-		<div class="Campeão1"> 
-		<a href="infocampeao.html"> <img src="imagens/Aatrox.png" title="Aatrox"> </a> </div>
-		<div class="Campeão2"> 
+		<div class="Campeao"> 
+		<a class="lightBox" href="infocampeao.html"> <img src="imagens/Aatrox.png" title="Aatrox"> </a> </div>
+		<div class="Campeao"> 
 		<a href="infocampeao.html"> <img src="imagens/Ahri.png"> </a> </div>
-		<div class="Campeão3"> 
+		<div class="Campeao"> 
 		<a href="infocampeao.html"> <img src="imagens/Akali.png"> </a> </div>
-			<div class="Campeão4"> 
+			<div class="Campeao"> 
 		<a href="infocampeao.html"> <img src="imagens/Alistar.png"> </a> </div>
-		<div class="Campeão5"> 
+		<div class="Campeao"> 
 		<a href="infocampeao.html"> <img src="imagens/Amumu.png"> </a> </div>
-		<div class="Campeão6"> 
+		<div class="Campeao"> 
 		<a href="infocampeao.html"> <img src="imagens/Anivia.png"> </a> </div>
-		<div class="Campeão7"> 
+		<div class="Campeao"> 
 		<a href="infocampeao.html"> <img src="imagens/Annie.png"> </a> </div>
-		<div class="Campeão8"> 
+		<div class="Campeao"> 
 		<a href="infocampeao.html"> <img src="imagens/Ashe.png"> </a> </div>
-		<div class="Campeão9"> 
+		<div class="Campeao"> 
 		<a href="infocampeao.html"> <img src="imagens/AurelionSol.png"> </a> </div>
-		<div class="Campeão10"> 
+		<div class="Campeao"> 
 		<a href="infocampeao.html"> <img src="imagens/Azir.png"> </a> </div>
-		<div class="Campeão11"> 
+		<div class="Campeao"> 
 		<a href="infocampeao.html"> <img src="imagens/Bard.png"> </a> </div>
-		<div class="Campeão12"> 
+		<div class="Campeao"> 
 		<a href="infocampeao.html"> <img src="imagens/Blitzcrank.png"> </a> </div>
-		<div class="Campeão13"> 
+		<div class="Campeao"> 
 		<a href="infocampeao.html"> <img src="imagens/Braum.png"> </a> </div>
-		<div class="Campeão14"> 
+		<div class="Campeao"> 
 		<a href="infocampeao.html"> <img src="imagens/Caitlyn.png"> </a> </div>
-		<div class="Campeão15"> 
+		<div class="Campeao"> 
 		<a href="infocampeao.html"> <img src="imagens/Cassiopeia.png"> </a> </div>
-		<div class="Campeão16"> 
+		<div class="Campeao"> 
 		<a href="infocampeao.html"> <img src="imagens/Chogath.png"> </a> </div>
-		<div class="Campeão17"> 
+		<div class="Campeao"> 
 		<a href="infocampeao.html"> <img src="imagens/Corki.png"> </a> </div>
-		<div class="Campeão18"> 
+		<div class="Campeao"> 
 		<a href="infocampeao.html"> <img src="imagens/Darius.png"> </a> </div>
-		<div class="Campeão19"> 
+		<div class="Campeao"> 
 		<a href="infocampeao.html"> <img src="imagens/Diana.png"> </a> </div>
-		<div class="Campeão20"> 
+		<div class="Campeao"> 
 		<a href="infocampeao.html"> <img src="imagens/Draven.png"> </a> </div>
-		<div class="Campeão21"> 
+		<div class="Campeao"> 
 		<a href="infocampeao.html"> <img src="imagens/DrMundo.png"> </a> </div>
-		<div class="Campeão22"> 
+		<div class="Campeao"> 
 		<a href="infocampeao.html"> <img src="imagens/Ekko.png"> </a> </div>
-		<div class="Campeão23"> 
+		<div class="Campeao"> 
 		<a href="infocampeao.html"> <img src="imagens/Elise.png"> </a> </div>
-		<div class="Campeão24"> 
+		<div class="Campeao"> 
 		<a href="infocampeao.html"> <img src="imagens/Evelynn.png"> </a> </div>
 		</div>
 		</div>
 		<!-- Fim do Content -->
+
+		<div id="pages">
+				<ul>
+					<li class="nolink">« Previous Page</li>
+					<li class="current">1</li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li><a href="#">Next Page »</a></li>
+				</ul>
+			</div>
+
+</div>
 				<div class="bt-maior">
 				<a href="#" class="btlaranja">Jogue Agora</a>
 				</div>
 			</div>
 				
 		<!-- Rodapé -->
-<!-- 
+
 				<div class="footer">
 
 								<div class="footer-links">
@@ -208,7 +256,7 @@
 					<a title="pvp-net" href="#" id="pvp"><img src="imagens/pvp.net.png"></a>
 					</div>
 			
-		 --></div>	
+		 </div>	
 
 	</body>
 </html>

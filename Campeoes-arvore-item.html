@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 	<head>
 		<meta charset="UTF-8">
-		<link type="text/css" rel="stylesheet" href="estilo_noticias.css"/>
+
+			<link rel="stylesheet" type="text/css" href="estilo-campeao.css">
 			<style type="text/css"> a:link { text-decoration:none; } </style>
-		<title>League of Legends</title>
+		
+		<title>League of Legends - Campeões</title>
+
+			<link rel="stylesheet" href="colorbox/colorbox.css" />
+			<script type="text/javascript" src="jquery-3.0.0.min.js"></script>
+			<script src="colorbox/jquery.colorbox.js"></script>
+
+		<script>
+			$(document).ready(function(){
+		
+			$(".iframe").colorbox({iframe:true, width:"80%", height:"100%"});
+			});
+
+		</script>
+
 	</head>
+	
 	<body>
 
 		<!-- Menu Topo -->
@@ -90,114 +106,151 @@
 				</div>
 			</div>
 
-		</div>	
-					
-
+		</div>
 		<!-- Conteúdo -->
-		
-		<div class="conteudo-noticias">
 
-			<h1 id="titulo-destaque">NOTÍCIAS</h1>
+	<div class="conteiner">
 
-				<div class="box-destaque">
-						
-						<h6>19 de maio de 2016</h6>
-						
-						<img id="imagem-destaque" src="imagens/noticias-destaque.jpg">	
-						
-						<div class="titulo-subtitulo">
-						<a href="#"><h2>INTZ x Keyd ao vivo no CBLoL!</h2>
-							
-						<p>A Segunda Etapa do CBLoL começa com uma Super Semana explosiva. INTZ e Keyd dão início aos trabalhos, repetindo a ﬁnal da Primeira Etapa. No segundo jogo do dia, a nova CNB enfrenta uma Red Canids turbinada com grandes reforços.</p></a>
-							
-						<h6 id="tempo-destaque">HÁ 4 HORAS</h6>
-						</div>
-
-				</div>
-						
-						<h1 id="titulo-noticias-recentes">NOTÍCIAS MAIS RECENTES</h1>
-						
-				<div class="conteiner-noticias">
-
-					<div class="box-noticia">
-						<img id="imagem-noticia" src="imagens/noticias-promocao.jpg">
-						
-						<div class="texto-box">
-							<h3>Promoção: nova leva de miniaturas</h3>
-						
-							<p>Heimerdinger continua Tunando em Piltover, obrigado por perguntar.</p>
-						
-							<h6>07-06-2016</h6>
-						</div>
-
+		<div class="box-escolha">
+			<div class="titulo-escolha"> 
+				<h2>Escolha de Campeões</h2>
+			</div>
+			
+			<div class="escolha-de-campeoes">
+					<div class="escolha-campeao imagem-escolha">	<input type="radio" name="Assassino" id="botao-radio"/>
+						Assassino<label for="Assassino">Assassino</label>
 					</div>
 
-					<div class="box-noticia">
-						<img id="imagem-noticia" src="imagens/noticias-atualizacao.jpg">
-						
-						<div class="texto-box">	
-							<h3>Atualização de formato no CBLoL 2016 - 2ª Etapa</h3>
-							
-							<p>Chegamos à metade da temporada com algumas mudanças pontuais no regulamento do CBLoL. Entenda os motivos das alterações no formato desta etapa.</p>
-							
-							<h6>06-06-2016</h6>
-						</div>
+					<div class="escolha-campeao imagem-escolha">	<input type="radio" name="Lutador" id="botao-radio"/>
+						Lutador<label for="Lutador">Lutador</label>
 					</div>
 
-					<div class="box-noticia">
-						<img id="imagem-noticia" src="imagens/rotacao.jpg">
-						
-						<div class="texto-box">		
-							<h3>Rotação Semanal Grátis: Ahri, Amumu, Brand e mais!</h3>
-
-							<p>Saudações, Invocadores! Eis os Campeões grátis da semana.</p>
-						
-							<h6>05-06-2016</h6>
-						</div>
+					<div class="escolha-campeao imagem-escolha">	<input type="radio" name="Mago" id="botao-radio"/>
+						Mago<label for="Mago">Mago</label>
 					</div>
 
-					<div class="box-noticia">
-						<img id="imagem-noticia" src="imagens/empates.jpg">
-						
-						<div class="texto-box">
-							<h3>Empates com gosto de vitória</h3>
-
-							<p>Red Canids perde o primeiro jogo diante da Keyd, mas dá a volta por cima e empata. Na segunda série do Dia 3, CNB encurrala a INTZ, mas acaba cedendo o empate no ﬁnal.</p>
-						
-							<h6>05-06-2016</h6>
-						</div>
+					<div class="escolha-campeao imagem-escolha">	<input type="radio" name="Suporte" id="botao-radio"/>
+						Suporte<label for="Suporte">Suporte</label>
 					</div>
 
-					<div class="box-noticia">
-						<img id="imagem-noticia" src="imagens/atofinal.jpg">
-						
-						<div class="texto-box">			 
-							<h3>Ato Final: Descendentes</h3>
-									
-							<p>Todos os destinos se interligam em Shurima. É hora de defender o Império das Areias de uma vez por todas.</p>
-									
-							<h6>05-06-2016</h6>
-						</div>
+					<div class="escolha-campeao imagem-escolha">	<input type="radio" name="Tanque" id="botao-radio"/>
+						Tanque<label for="Tanque">Tanque</label>
 					</div>
 
-					<div class="box-noticia">
-						<img id="imagem-noticia" src="imagens/nexus.jpg">
-						
-						<div class="texto-box">			
-							<h3>Depois do Nexus: 20/06/2016</h3>
-									
-							<p>Tixinha recebe TaeYeon, Revolta, Baiano e pbo para discutir as semifinais do CBLoL!</p>
-									
-							<h6>05-06-2016</h6>
-						</div>
+					<div class="escolha-campeao imagem-escolha">	<input type="radio" name="Atirador" id="botao-radio"/>
+						Atirador<label for="Atirador">Atirador</label>
 					</div>
 
 				</div>
+
+				<div class="btcinza">
+					<a href="#" class="btcinza-1">Buscar</a>
+				</div>
+
 		</div>
 
-			<!-- Fim do Conteúdo -->
+		<div class="Grade-Campeao">
+			
+			<div class="Campeao"> 
+				<a class="iframe" href="arvore-item.html"> <img src="imagens/Aatrox.png" title="Aatrox"></a> 
+			</div>
+		
+			<div class="Campeao"> 
+				<a href="infocampeao.html"> <img src="imagens/Ahri.png"> </a> 
+			</div>
+		
+			<div class="Campeao"> 
+				<a href="infocampeao.html"> <img src="imagens/Akali.png"> </a> 
+			</div>
+			
+			<div class="Campeao"> 
+				<a href="infocampeao.html"> <img src="imagens/Alistar.png"> </a> 
+			</div>
+		
+			<div class="Campeao"> 
+				<a href="infocampeao.html"> <img src="imagens/Amumu.png"> </a> 
+			</div>
 
-			<div id="pages">
+			<div class="Campeao"> 
+				<a href="infocampeao.html"> <img src="imagens/Anivia.png"> </a> 
+			</div>
+
+			<div class="Campeao"> 
+				<a href="infocampeao.html"> <img src="imagens/Annie.png"> </a> 
+			</div>
+
+			<div class="Campeao"> 
+				<a href="infocampeao.html"> <img src="imagens/Ashe.png"> </a> 
+			</div>
+
+			<div class="Campeao"> 
+				<a href="infocampeao.html"> <img src="imagens/AurelionSol.png"> </a> 
+			</div>
+
+			<div class="Campeao"> 
+				<a href="infocampeao.html"> <img src="imagens/Azir.png"> </a> 
+			</div>
+
+			<div class="Campeao"> 
+				<a href="infocampeao.html"> <img src="imagens/Bard.png"> </a> 
+			</div>
+
+			<div class="Campeao"> 
+			<a href="infocampeao.html"> <img src="imagens/Blitzcrank.png"> </a> 
+			</div>
+
+			<div class="Campeao"> 
+				<a href="infocampeao.html"> <img src="imagens/Braum.png"> </a> 
+			</div>
+
+			<div class="Campeao"> 
+				<a href="infocampeao.html"> <img src="imagens/Caitlyn.png"> </a> 
+			</div>
+
+			<div class="Campeao"> 
+				<a href="infocampeao.html"> <img src="imagens/Cassiopeia.png"> </a> 
+			</div>
+
+			<div class="Campeao"> 
+				<a href="infocampeao.html"> <img src="imagens/Chogath.png"> </a> 
+			</div>
+
+			<div class="Campeao"> 
+				<a href="infocampeao.html"> <img src="imagens/Corki.png"> </a> 
+			</div>
+
+			<div class="Campeao"> 
+				<a href="infocampeao.html"> <img src="imagens/Darius.png"> </a> 
+			</div>
+
+			<div class="Campeao"> 
+				<a href="infocampeao.html"> <img src="imagens/Diana.png"> </a> 
+			</div>
+
+			<div class="Campeao"> 
+				<a href="infocampeao.html"> <img src="imagens/Draven.png"> </a> 
+			</div>
+
+			<div class="Campeao"> 
+				<a href="infocampeao.html"> <img src="imagens/DrMundo.png"> </a> 
+			</div>
+
+			<div class="Campeao"> 
+				<a href="infocampeao.html"> <img src="imagens/Ekko.png"> </a> 
+			</div>
+
+			<div class="Campeao"> 
+				<a href="infocampeao.html"> <img src="imagens/Elise.png"> </a> 
+			</div>
+
+			<div class="Campeao"> 
+				<a href="infocampeao.html"> <img src="imagens/Evelynn.png"> </a> 
+			</div>
+		</div>
+	</div>
+		<!-- Fim do Content -->
+
+		<div id="pages">
 				<ul>
 					<li class="nolink">« Previous Page</li>
 					<li class="current">1</li>
@@ -208,14 +261,16 @@
 					<li><a href="#">Next Page »</a></li>
 				</ul>
 			</div>
+
+</div>
+				<div class="bt-maior">
+				<a href="#" class="btlaranja">Jogue Agora</a>
+				</div>
+			</div>
 				
 		<!-- Rodapé -->
 
 				<div class="footer">
-
-					<div class="bt-maior">
-				<a href="#" class="btlaranja">Jogue Agora</a>
-				</div>
 
 								<div class="footer-links">
 								<ul class="menu-simples-footer">
@@ -250,6 +305,7 @@
 					<a title="pvp-net" href="#" id="pvp"><img src="imagens/pvp.net.png"></a>
 					</div>
 			
-		</div>
+		 </div>	
+
 	</body>
 </html>

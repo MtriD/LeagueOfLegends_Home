@@ -1,0 +1,486 @@
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url(imagens/Background.png);
+    background-repeat: repeat;
+    background-attachment: fixed;
+    font-family: "Playfair Display SC";
+    font-size: 19px;
+
+}
+
+.header{
+    top: 0;
+    height: 240px;
+    width: 100%;
+    position: fixed;
+    background: url(imagens/textura-superior.png) no-repeat;
+    z-index: 90;
+}
+
+#logo-home{
+    z-index: 130;
+    position: absolute;
+    left: 40%;
+    top: 10%; 
+}
+
+.menu-topo{
+    color: #B78A29;
+    z-index: 110;
+    list-style: none;
+    text-decoration: none;
+    position: absolute;
+    line-height: 50px; 
+    margin: 0 auto;
+    padding: auto;
+    bottom: 140px;
+    font-size: 18px;
+        }
+        
+        /*menu topo esquerda */
+
+        .submenu-esquerda{
+            z-index: 50;
+            position: absolute;
+            text-align: left;
+            font-size: 12px;
+            padding-left: 0px;
+            left: 0px;
+            width: 200px;
+            height: auto;
+            background-color: #1C2B2D;
+        }
+
+        ul.menu-esquerda{
+            width: 450px;
+            height: 50px;
+            text-align: left; 
+        }
+        ul.menu-esquerda li{
+            position: relative;
+            display: inline-block;
+            margin: 0 0px;
+        }
+        ul.menu-esquerda li a{
+            color: #B78A29;
+            text-decoration: none;
+            padding: 0 8px 0 8px;
+            display: inline-block;
+        }
+
+        ul.menu-esquerda li ul{
+            position: absolute;
+            float: left;
+            display: none;
+        }
+
+        ul.menu-esquerda li ul li, ul.menu-esquerda li ul li a{
+            display: block;
+        }
+
+        ul.menu-esquerda li:hover ul.submenu-esquerda {
+            display: block;
+        }
+
+        ul.menu-esquerda li a:hover, .submenu-esquerda li.over{
+            background-color: #B78A29;
+            color: #ffffff;
+        }
+
+        /*Menu topo direita*/
+
+        .submenu-direita{
+            position: absolute;
+            text-align: left;
+            font-size: 12px;
+            padding-left: 0px;
+            left: 0px;
+            width: 160px;
+            height: auto;
+            background-color: #1C2B2D;
+        }
+
+        ul.menu-direita{
+            position: relative;
+            margin-top: -68px;
+            margin-left: 750px;
+        }
+        ul.menu-direita li{
+            position: relative;
+            display: inline-block;
+            margin: 0 0px;
+        }
+        ul.menu-direita li a{
+            color: #B78A29;
+            text-decoration: none;
+            padding: 0 8px 0 8px;
+            display: inline-block;    
+        }
+
+        ul.menu-direita li ul{
+            position: absolute;
+            float: right;
+            display: none;
+        }
+
+        ul.menu-direita li ul li, ul.menu-direita li ul li a{
+            display: block;
+        }
+
+         ul.menu-direita li:hover ul.submenu-direita {
+            display: block;
+        }
+
+        ul.menu-direita li a:hover, .submenu-direita li.over{
+            background-color: #B78A29;
+            color: #ffffff;
+        }
+
+
+/* Botao Busca */
+
+.divBusca{
+    margin-top: 30px;
+    float: right;
+    margin-right: 60px;
+    border-radius:15px;
+}
+
+.txtBusca{
+    color: #fff;
+    background-color: #2F4F4F;
+    position: relative;
+    float:right;
+    padding-left:5px;
+    font-style:italic;
+    font-size:18px;
+    border:none;
+    margin-top: 55px;
+    height:30px;
+    width:200px;
+    left: 50px;
+    border-radius:15px;
+}
+ 
+.MostrarBusca{
+    text-align: left;
+    display: none;
+    float: left;
+    background-color: transparent;
+    font-style: italic;
+    font-size: 16px;
+    border: none;
+    height: 80px;
+    width: 180px;
+}
+#check-lupa {
+    display: none;
+}
+
+#check-lupa:checked + .MostrarBusca {
+    display: block;
+}
+
+/* Conteúdo */
+
+.conteiner{
+    width: 1280px;
+    height: 650px;
+    margin-bottom: 100px;
+}
+
+.box-escolha {
+    position: relative;
+    height: 525px; 
+    width: 260px;
+    background-color: rgba(1,1,1,0.9);
+    color: #b78a29;
+    text-decoration: none;
+    top: 180px;
+}
+
+#opcao-tipo{
+    font-size: 18px;
+    text-align: center;
+    position: relative;
+    left: 40px;
+}
+
+.escolha-de-campeoes {
+    text-align: left;
+   list-style: none; 
+   font-size: 25px;
+   padding-top: 20px;
+   padding-left: 180px;
+   margin-bottom: 40px;
+}
+
+.escolha-de-campeoes:after{
+    content: "";
+    clear: both;
+}
+
+.escolha-campeao{
+  background-color: rgba(1,1,1,0.9);
+  display: flex;
+  height: 45px;
+  position: relative;
+  width: 120px;
+  right: 100px;
+}
+
+.escolha-campeao label{
+  background: rgba(1,1,1,0.5) no-repeat center center;
+  bottom: 10px;
+  cursor: pointer;
+  display: block;
+  font-size: 0;
+  left: -50px;
+  position: absolute;
+  right: 1px;
+  text-indent: 100%;
+  top: 1px;
+  white-space: nowrap;
+  width: 40px;
+  height: 40px;
+}
+
+.imagem-escolha label{
+    background-image: url(imagens/botao-radio-campeoes.png);
+}
+
+#botao-radio{
+    position: relative;
+    left: -35px;
+    top: 5px;
+
+}
+
+.imagem-escolha input:checked + label {
+    background-image: url(imagens/botao-radio-campeoes-checked.png);
+}
+
+.titulo-escolha h2 {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    }
+
+
+
+.btcinza-1{
+    color: #B78A29;
+    font: bold 20px "Playfair Display SC";
+    text-align: left;
+    margin-left: 60px;
+    margin-top: -20px;
+    background-image: url(imagens/bg-botao-cinza-meio.png);
+    background-repeat: repeat-x;
+    background-position: center;
+    line-height: 55px;
+    display: inline-block;
+}
+
+a.btcinza-1:before, a.btcinza-1:after {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 56px;
+    vertical-align: middle;
+
+}
+a.btcinza-1:before{
+
+    background: url(imagens/bg-botao-cinza-esquerdo.png) top left no-repeat;
+
+}
+a.btcinza-1:after{
+
+    background: url(imagens/bg-botao-cinza-direita.png) top right no-repeat;
+
+}
+
+.Grade-Campeao{
+    z-index: 50;
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+    left: 400px;
+    justify-content: space-around;
+    margin-left: 400px;
+    margin-top: -330px;
+}
+
+.Grade-Campeao a {
+    width: 120px;
+    height: 120px;
+}
+
+.Campeao{
+    margin-top: 10px;
+    margin-bottom: 10px
+    width: 120px;
+    height: 120px;
+}
+
+.Campeao:hover{
+    border: solid 2px rgba(0,90,109,0.9);
+}
+
+.nolink{
+    color: #B78A29;
+}
+
+#pages {
+    float: left;
+    padding: 3px;
+    position: relative;
+    display: flex;
+    right: 0px;
+    left: 758px;
+    bottom: 50px;
+}
+#pages ul {
+    list-style-type: none;
+}
+#pages li {
+    float: left;
+    display: inline;
+    margin: 0 5px 0 0;
+    display: block;
+}
+#pages li a {
+    background-color: rgba(1,1,1,0.5);
+    color: #B78A29;
+    padding: 4px;
+    text-decoration: none;
+    float: left;
+}
+#pages li a:hover {
+    color: #B78A29;
+    background: #f1ffd6;
+}
+#pages li.nolink {
+    background-color: rgba(1,1,1,0.5);
+    color: #B78A29;
+    padding: 4px;
+}
+#pages li.current {
+    color: #FFF;
+    padding: 4px;
+    background: #005A6D;
+}
+        /* Social Media Rodapé */
+
+#riot{
+    margin-right: 500px;
+    margin-left: 55px;
+    margin-top: -350px;
+}
+
+        ul.social-media{
+            margin-top: 1px;
+            margin-left: 5px;
+            text-align: left; 
+        }
+        ul.social-media li{
+            display: inline-block;
+            margin: 0 0px;
+        }
+        ul.social-media li a{
+            padding: 1px 1px;
+            color: #B78A29;
+        }
+        ul.social-media li a:hover{
+            background-color: transparent;
+        }
+
+.bt-maior{
+    color: #ffffff;
+    z-index: 30;
+    position: relative;
+    text-align: center;
+    bottom: 0px;
+    top: 30px;
+    right: 225px;
+}
+
+.btlaranja{
+    color: #000000;
+    font: bold 23px "Playfair Display SC";
+    text-align: center;
+    background-image: url(imagens/botao-central-meio.png);
+    background-repeat: repeat-x;
+    background-position: center;
+    line-height: 55px; 
+    display: inline-block;
+}
+a.btlaranja:before, a.btlaranja:after {
+    content: '';
+    display:inline-block;
+    width: 30px;
+    height: 56px;
+    vertical-align: middle;
+
+}
+a.btlaranja:before{
+
+    background: url(imagens/botao-central-esquerdo.png) top left no-repeat;
+
+}
+a.btlaranja:after{
+
+    background: url(imagens/botao-central-direita.png) top right no-repeat;
+
+}
+
+
+        ul.menu-simples-footer{
+            margin-right: 100px;
+            position: relative;
+            text-align: center;
+            font-size: 13px;
+            margin-top: 160px;
+            top: 55px;
+        }
+        ul.menu-simples-footer li{
+            display: inline-block;
+            margin: 0 0px;
+        }
+        ul.menu-simples-footer li a{
+            padding: 8px 8px;
+            color: #ffffff;
+        }
+        ul.menu-simples-footer li a:hover{
+            font: #059CC8;
+        }
+
+.texto-copy-right{
+            height:50px;
+            width:640px;
+            float: left;
+            position: relative;
+            text-align: center;
+            font-size: 13px;
+            margin-left: 280px; 
+            top: 65px;
+            color: #ffffff;
+}
+
+#pvp{
+    float: right;
+    margin-left: 1000px;
+    margin-top: -150px;
+    margin-right: 20px;
+}
+
+.footer{
+    z-index: 15;
+    top: 700px;
+    width: 100%;
+    height: 392px;
+    position: absolute;
+    background: url(imagens/textura-inferior.png) no-repeat;
+}
